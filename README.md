@@ -262,5 +262,5 @@ This package is bootstrapped with the help of
 [3]: ./docs/examples/basic-delayed-notification.md "Delayed 1 Week Example"
 [4]: ./docs/examples/custom-data-example.md "Custom Data Example"
 [5]: ./docs/examples/on-boarding-email-drip.md  "On-boarding Drip Example"
-[6]: https://laravel.com/docs/5.7/scheduling#introduction "Configure Laravel Scheduler"
+[6]: https://laravel.com/docs/9.x/scheduling#running-the-scheduler "Running The Scheduler"
 [7]: https://laravel.com/docs/5.7/scheduling#introduction "Generators"
