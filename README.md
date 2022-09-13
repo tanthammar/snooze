@@ -153,7 +153,7 @@ $result = $notification->isCancelled(); // returns a bool
 $result = $notification->isSent(); // returns a bool
 ```
 
-### Conditionally interrupt a scheduled notification
+# Conditionally interrupt a scheduled notification
 
 If you'd like to stop an email from being sent conditionally, you can add the `shouldInterrupt()` method to any notification. This method will be checked immediately before the notification is sent.
 
