@@ -14,6 +14,7 @@ class ScheduledNotification extends Model
 {
     /** @var string */
     protected $table;
+
     /** @var Serializer */
     protected $serializer;
 

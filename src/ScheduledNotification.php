@@ -57,13 +57,13 @@ class ScheduledNotification
         $targetType = $notifiable instanceof AnonymousNotifiable ? AnonymousNotifiable::class : get_class($notifiable);
 
         return new self($modelClass::create([
-            'target_id'         => $targetId,
-            'target_type'       => $targetType,
+            'target_id' => $targetId,
+            'target_type' => $targetType,
             'notification_type' => get_class($notification),
-            'target'            => $serializer->serialize($notifiable),
-            'notification'      => $serializer->serialize($notification),
-            'send_at'           => $sendAt,
-            'meta'              => $meta,
+            'target' => $serializer->serialize($notifiable),
+            'notification' => $serializer->serialize($notification),
+            'send_at' => $sendAt,
+            'meta' => $meta,
         ]));
     }
 
@@ -158,7 +158,7 @@ class ScheduledNotification
             ->get()
             ->map(function (ScheduledNotificationModel $model) use ($serializer) {
                 return [
-                    'id'     => $model->id,
+                    'id' => $model->id,
                     'routes' => $serializer->unserialize($model->target)->routes,
                 ];
             })
